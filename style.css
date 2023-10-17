@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #eee;
+}
+
+.login_box {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 1rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.login_left {
+  width: 50%;
+  padding: 1rem 4rem;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.login_left > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.All_details {
+  padding: 1rem;
+}
+
+.details {
+  margin: 0.5rem 0;
+}
+
+.details > h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.details > input {
+  width: 100%;
+  padding: 0.7rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  outline-color: #559df6;
+  margin: 0.5rem 0;
+}
+
+.loginbtn {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4253ef;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.loginbtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #549aed;
+}
+
+.login_right {
+  width: 50%;
+  background: #4253ef;
+  padding: 1rem 4rem;
+  border-radius: 15px;
+  color: white;
+}
+
+.login_right > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.login_right > p {
+  font-weight: 200;
+}
+
+.right_img {
+  width: 100%;
+}
+
+@media (min-device-width: 701px) and (max-device-width: 768px) {
+  .login_left {
+    padding: 1rem 2rem;
+  }
+  .login_right {
+    padding: 1rem 2rem;
+  }
+
+  .login_right > h3 {
+    font-size: 1.3rem;
+  }
+
+  .login_right > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .login_box {
+    width: 90%;
+  }
+  .login_left {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .login_right {
+    display: none;
+  }
+}
